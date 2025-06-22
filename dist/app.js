@@ -15,4 +15,14 @@ app.use('/api/borrow', borrow_route_1.default);
 app.get('/', (req, res) => {
     res.send('Library Management API running');
 });
+app.use((req, res) => {
+    res.status(404).json({
+        success: false,
+        message: 'API endpoint not found',
+        error: {
+            path: req.originalUrl,
+            method: req.method,
+        },
+    });
+});
 exports.default = app;
