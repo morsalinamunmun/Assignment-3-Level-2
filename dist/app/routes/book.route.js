@@ -9,4 +9,6 @@ const router = express_1.default.Router();
 router.post('/', book_controller_1.createBook);
 router.get('/', book_controller_1.getAllBooks);
 router.get('/:bookId', book_controller_1.getBookById);
+router.patch('/:bookId', book_controller_1.updateBookById);
+router.delete('/:bookId', book_controller_1.deleteBookById);
 exports.default = router;
