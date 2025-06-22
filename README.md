@@ -34,67 +34,10 @@ To develop a backend system for managing a digital library. The system allows fo
 
 ---
 
-## 🚧 Project Setup (Manual)
- I created the project step-by-step with the following process:
-
-1. Initialized the project using `npm init -y`
-2. Installed required dependencies:
-   ```bash
-   npm install express mongoose dotenv cors
-   npm install -D typescript ts-node-dev @types/express @types/node
-Created and configured tsconfig.json for TypeScript.
-
-Set up custom folder structure:
-
-src/app.ts
-
-src/server.ts
-
-/src/app/controllers/book.controller.ts
-
-/src/app/controllers/borrow.controller.ts
-
-/src/app/models/book.models.ts
-
-/src/app/models/borrow.models.ts
-
-/src/app/routes/book.route.ts
-
-/src/app/routes/borrow.route.ts
-
-/src/middlewares
-
-/src/config
-
-/src/utils
-
-Connected to MongoDB using Mongoose.
-
-Implemented all API endpoints and business logic.
-
-Used Mongoose Schema validation, static/instance methods, and aggregation.
-
-📁 Folder Structure
-
-src/
-└── app/
-├── config/ # Database connection
-├── controllers/ # Book & Borrow controllers
-├── middlewares/ # Future middleware logic
-├── models/ # Mongoose schemas
-├── routes/ # API routes
-└── utils/ # Utility functions
-├── app.ts # App initialization
-└── server.ts # Entry point
-├── .env
-├── tsconfig.json
-└── package.json
-
 ## ⚙️ How to Run Locally
-Clone the Repo (if from GitHub)
-
-git clone <your_repo_link>
-cd library-management-api
+Clone the Repo from GitHub
+git clone https://github.com/morsalinamunmun/Assignment-3-Level-2.git
+cd Assignment-3-Level-2
 
 **Install Dependencies**
 npm install
