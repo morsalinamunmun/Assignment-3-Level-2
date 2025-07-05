@@ -5,7 +5,7 @@ import bookRoutes from './app/routes/book.route';
 import borrowRoutes from './app/routes/borrow.route';
 
 const app = express();
-app.use(cors());
+app.use(cors({origin: ['http://localhost:8080/', 'https://libraryos-ecru.vercel.app/']}));
 app.use(express.json());
 
 app.use('/api/books', bookRoutes);
